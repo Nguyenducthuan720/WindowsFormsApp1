@@ -1,60 +1,79 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    internal class Database
+    public class Database
     {
-        // Chuỗi kết nối
-        string strConn = @"Data Source=.;Initial Catalog=QLNhanSu;Integrated Security=True";
+        // Thay đổi connection string cho phù hợp với SQL Server của bạn
+        private string connectionString =
+            "Data Source=teptep\\mssqlserver1;Initial Catalog=QuanLyNhanSu;Integrated Security=True;";
 
-        SqlConnection conn;
-
-        // Mở kết nối
-        public void OpenConnection()
+        public SqlConnection GetConnection()
         {
-            conn = new SqlConnection(strConn);
-            if (conn.State == ConnectionState.Closed)
-                conn.Open();
+            return new SqlConnection(connectionString);
         }
 
-        // Đóng kết nối
-        public void CloseConnection()
-        {
-            if (conn.State == ConnectionState.Open)
-                conn.Close();
-        }
-
-        // Lấy dữ liệu SELECT
         public DataTable GetData(string sql)
         {
-            OpenConnection();
-
-            SqlDataAdapter da = new SqlDataAdapter(sql, conn);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-
-            CloseConnection();
-
-            return dt;
+            try
+            {
+                using (SqlConnection con = GetConnection())
+                {
+                    con.Open();
+                    SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+                    return dt;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối CSDL: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return new DataTable();
+            }
         }
 
-        // Thực thi INSERT UPDATE DELETE
-        public int Execute(string sql)
+        public bool Execute(string sql)
         {
-            OpenConnection();
-
-            SqlCommand cmd = new SqlCommand(sql, conn);
-            int result = cmd.ExecuteNonQuery();
-
-            CloseConnection();
-
-            return result;
+            try
+            {
+                using (SqlConnection con = GetConnection())
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi thực thi SQL: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
         }
-}
+
+        public object ExecuteScalar(string sql)
+        {
+            try
+            {
+                using (SqlConnection con = GetConnection())
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(sql, con);
+                    return cmd.ExecuteScalar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+        }
+    }
 }

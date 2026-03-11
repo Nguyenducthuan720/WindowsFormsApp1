@@ -2,15 +2,8 @@
 {
     partial class MainForm
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -61,7 +50,8 @@
             this.thongKeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,14 +60,15 @@
             this.heThongToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thoatToolStripMenuItem});
             this.heThongToolStripMenuItem.Name = "heThongToolStripMenuItem";
-            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
-            this.heThongToolStripMenuItem.Text = "He Thong";
+            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
+            this.heThongToolStripMenuItem.Text = "Hệ Thống";
             // 
             // thoatToolStripMenuItem
             // 
             this.thoatToolStripMenuItem.Name = "thoatToolStripMenuItem";
-            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(127, 26);
-            this.thoatToolStripMenuItem.Text = "thoat";
+            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thoatToolStripMenuItem.Text = "Thoát";
+            this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
             // 
             // quanLyToolStripMenuItem
             // 
@@ -86,26 +77,29 @@
             this.phongBanToolStripMenuItem,
             this.chucVuToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(73, 26);
-            this.quanLyToolStripMenuItem.Text = "Quan ly";
+            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.quanLyToolStripMenuItem.Text = "Quản Lý";
             // 
             // nhanVienToolStripMenuItem
             // 
             this.nhanVienToolStripMenuItem.Name = "nhanVienToolStripMenuItem";
-            this.nhanVienToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
-            this.nhanVienToolStripMenuItem.Text = "nhan vien";
+            this.nhanVienToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nhanVienToolStripMenuItem.Text = "Nhân Viên";
+            this.nhanVienToolStripMenuItem.Click += new System.EventHandler(this.nhanVienToolStripMenuItem_Click);
             // 
             // phongBanToolStripMenuItem
             // 
             this.phongBanToolStripMenuItem.Name = "phongBanToolStripMenuItem";
-            this.phongBanToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
-            this.phongBanToolStripMenuItem.Text = "phong ban";
+            this.phongBanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phongBanToolStripMenuItem.Text = "Phòng Ban";
+            this.phongBanToolStripMenuItem.Click += new System.EventHandler(this.phongBanToolStripMenuItem_Click);
             // 
             // chucVuToolStripMenuItem
             // 
             this.chucVuToolStripMenuItem.Name = "chucVuToolStripMenuItem";
-            this.chucVuToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
-            this.chucVuToolStripMenuItem.Text = "chuc vu";
+            this.chucVuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chucVuToolStripMenuItem.Text = "Chức Vụ";
+            this.chucVuToolStripMenuItem.Click += new System.EventHandler(this.chucVuToolStripMenuItem_Click);
             // 
             // nghiepVuToolStripMenuItem
             // 
@@ -113,118 +107,152 @@
             this.chamCongToolStripMenuItem,
             this.tinhLuongToolStripMenuItem});
             this.nghiepVuToolStripMenuItem.Name = "nghiepVuToolStripMenuItem";
-            this.nghiepVuToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
-            this.nghiepVuToolStripMenuItem.Text = "nghiep vu";
+            this.nghiepVuToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.nghiepVuToolStripMenuItem.Text = "Nghiệp Vụ";
+            this.nghiepVuToolStripMenuItem.Click += new System.EventHandler(this.nghiepVuToolStripMenuItem_Click);
             // 
             // chamCongToolStripMenuItem
             // 
             this.chamCongToolStripMenuItem.Name = "chamCongToolStripMenuItem";
-            this.chamCongToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
-            this.chamCongToolStripMenuItem.Text = "cham cong";
+            this.chamCongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chamCongToolStripMenuItem.Text = "Chấm Công";
+            this.chamCongToolStripMenuItem.Click += new System.EventHandler(this.chamCongToolStripMenuItem_Click);
             // 
             // tinhLuongToolStripMenuItem
             // 
             this.tinhLuongToolStripMenuItem.Name = "tinhLuongToolStripMenuItem";
-            this.tinhLuongToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
-            this.tinhLuongToolStripMenuItem.Text = "tinh luong";
+            this.tinhLuongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tinhLuongToolStripMenuItem.Text = "Tính Lương";
+            this.tinhLuongToolStripMenuItem.Click += new System.EventHandler(this.tinhLuongToolStripMenuItem_Click);
             // 
             // thongKeToolStripMenuItem
             // 
             this.thongKeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.baoCaoNhanSuToolStripMenuItem});
             this.thongKeToolStripMenuItem.Name = "thongKeToolStripMenuItem";
-            this.thongKeToolStripMenuItem.Size = new System.Drawing.Size(81, 26);
-            this.thongKeToolStripMenuItem.Text = "thong ke";
+            this.thongKeToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.thongKeToolStripMenuItem.Text = "Thống Kê";
             // 
             // baoCaoNhanSuToolStripMenuItem
             // 
             this.baoCaoNhanSuToolStripMenuItem.Name = "baoCaoNhanSuToolStripMenuItem";
-            this.baoCaoNhanSuToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
-            this.baoCaoNhanSuToolStripMenuItem.Text = "bao cao nhan su";
+            this.baoCaoNhanSuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.baoCaoNhanSuToolStripMenuItem.Text = "Báo Cáo Nhân Sự";
+            this.baoCaoNhanSuToolStripMenuItem.Click += new System.EventHandler(this.baoCaoNhanSuToolStripMenuItem_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 30);
+            this.panel1.Location = new System.Drawing.Point(0, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 420);
+            this.panel1.Size = new System.Drawing.Size(160, 537);
             this.panel1.TabIndex = 1;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(24, 281);
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(0, 200);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 23);
+            this.button5.Size = new System.Drawing.Size(160, 40);
             this.button5.TabIndex = 4;
-            this.button5.Text = "tinh luong";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Text = "💰  Tính Lương";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(24, 205);
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(0, 160);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 23);
+            this.button4.Size = new System.Drawing.Size(160, 40);
             this.button4.TabIndex = 3;
-            this.button4.Text = "cham cong";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Text = "📅  Chấm Công";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(24, 139);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 120);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 23);
+            this.button3.Size = new System.Drawing.Size(160, 40);
             this.button3.TabIndex = 2;
-            this.button3.Text = "chuc vu";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Text = "🏅  Chức Vụ";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(24, 71);
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 80);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 23);
+            this.button2.Size = new System.Drawing.Size(160, 40);
             this.button2.TabIndex = 1;
-            this.button2.Text = "phong ban";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Text = "🏢  Phòng Ban";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(24, 16);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 40);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 23);
+            this.button1.Size = new System.Drawing.Size(160, 40);
             this.button1.TabIndex = 0;
-            this.button1.Text = "nhan vien";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "👤  Nhân Viên";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(200, 30);
+            this.panel2.Location = new System.Drawing.Point(160, 24);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(600, 420);
+            this.panel2.Size = new System.Drawing.Size(824, 537);
             this.panel2.TabIndex = 2;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Quản Lý Nhân Sự";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
