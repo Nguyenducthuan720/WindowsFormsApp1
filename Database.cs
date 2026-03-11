@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
     {
         // Thay đổi connection string cho phù hợp với SQL Server của bạn
         private string connectionString =
-            "Data Source=teptep\\mssqlserver1;Initial Catalog=QuanLyNhanSu;Integrated Security=True;";
+            "Data Source=laptop-i2ta3hpl\\thuan;Initial Catalog=QuanLyNhanSu;Integrated Security=True;";
 
         public SqlConnection GetConnection()
         {

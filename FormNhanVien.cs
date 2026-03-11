@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -135,6 +136,7 @@ namespace WindowsFormsApp1
         private void button5_Click(object sender, EventArgs e)
         {
             LoadNhanVien();
+            txtTimKiem.Clear();
         }
 
         // button4 - thêm (phiên bản cũ giữ lại)
@@ -161,5 +163,38 @@ namespace WindowsFormsApp1
         private void textBox2_TextChanged(object sender, EventArgs e) { }
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) { }
         private void button1_Click(object sender, EventArgs e) { btnThem_Click(sender, e); }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            {
+                LoadNhanVien();
+                return;
+            }
+
+            string sql = $@"SELECT * FROM NhanVien
+                    WHERE MaNV LIKE '%{txtTimKiem.Text}%'
+                    OR HoTen LIKE N'%{txtTimKiem.Text}%'
+                    OR SDT LIKE '%{txtTimKiem.Text}%'";
+
+            dgvNhanVien.DataSource = db.GetData(sql);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtTimKiem.Text))
+            {
+                MessageBox.Show("Vui lòng nhập thông tin cần tìm!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string sql = $@"SELECT * FROM NhanVien
+                    WHERE MaNV LIKE '%{txtTimKiem.Text}%'
+                    OR HoTen LIKE N'%{txtTimKiem.Text}%'
+                    OR SDT LIKE '%{txtTimKiem.Text}%'";
+
+            dgvNhanVien.DataSource = db.GetData(sql);
+        }
     }
 }
