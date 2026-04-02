@@ -30,15 +30,17 @@
             this.thongKeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baoCaoNhanSuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -52,7 +54,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1312, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1312, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,7 +63,7 @@
             this.heThongToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thoatToolStripMenuItem});
             this.heThongToolStripMenuItem.Name = "heThongToolStripMenuItem";
-            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
+            this.heThongToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.heThongToolStripMenuItem.Text = "Hệ Thống";
             // 
             // thoatToolStripMenuItem
@@ -78,7 +80,7 @@
             this.phongBanToolStripMenuItem,
             this.chucVuToolStripMenuItem});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
+            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(75, 24);
             this.quanLyToolStripMenuItem.Text = "Quản Lý";
             // 
             // nhanVienToolStripMenuItem
@@ -108,7 +110,7 @@
             this.chamCongToolStripMenuItem,
             this.tinhLuongToolStripMenuItem});
             this.nghiepVuToolStripMenuItem.Name = "nghiepVuToolStripMenuItem";
-            this.nghiepVuToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
+            this.nghiepVuToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.nghiepVuToolStripMenuItem.Text = "Nghiệp Vụ";
             this.nghiepVuToolStripMenuItem.Click += new System.EventHandler(this.nghiepVuToolStripMenuItem_Click);
             // 
@@ -131,7 +133,7 @@
             this.thongKeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.baoCaoNhanSuToolStripMenuItem});
             this.thongKeToolStripMenuItem.Name = "thongKeToolStripMenuItem";
-            this.thongKeToolStripMenuItem.Size = new System.Drawing.Size(86, 26);
+            this.thongKeToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
             this.thongKeToolStripMenuItem.Text = "Thống Kê";
             // 
             // baoCaoNhanSuToolStripMenuItem
@@ -151,100 +153,11 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 30);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 28);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(213, 660);
+            this.panel1.Size = new System.Drawing.Size(213, 662);
             this.panel1.TabIndex = 1;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(0, 281);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(213, 49);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "💰  Tính Lương";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 233);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(213, 49);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "📅  Chấm Công";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 186);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 49);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "🏅  Chức Vụ";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 140);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "🏢  Phòng Ban";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(0, 94);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "👤  Nhân Viên";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(213, 30);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1099, 660);
-            this.panel2.TabIndex = 2;
             // 
             // button6
             // 
@@ -262,6 +175,105 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(0, 281);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(213, 49);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "💰  Tính Lương";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(0, 233);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(213, 49);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "📅  Chấm Công";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(0, 186);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(213, 49);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "🏅  Chức Vụ";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 140);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(213, 49);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "🏢  Phòng Ban";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 94);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 49);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "👤  Nhân Viên";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(213, 28);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1099, 662);
+            this.panel2.TabIndex = 2;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(174, 165);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 0;
+            this.button7.Text = "button7";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -271,12 +283,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Quản Lý Nhân Sự";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +317,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
